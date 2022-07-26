@@ -19,4 +19,20 @@ template:
 	  image: nginx:1.6
 	  ports:
  	  - containerPort:80
+---
+# Non prod service
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service  
+  labels:
+    app: nginx
+spec:
+  type:NodePort
+  ports:
+    nodePort: 30500
+    port: 80
+    protocol: TCP
+  selector:
+    app: nginx
     
