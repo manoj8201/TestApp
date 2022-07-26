@@ -1,2 +1,2 @@
 FROM nginx:alpine
-COPY . Mypage.html
+COPY .Html/Mypage.html
