@@ -27,7 +27,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  type:NodePort
+  type: NodePort
   ports:
     nodePort: 30500
     port: 80
