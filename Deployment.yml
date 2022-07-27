@@ -19,8 +19,8 @@ template:
       image: nginx:1.6
       ports:
       - containerPort: 80
-  
-apiVersion: v1
+---
+apiVersion: apps/v1
 kind: Service
 metadata:
   name: nginx-service  
